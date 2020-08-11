@@ -1,0 +1,68 @@
+#PF-Assgn-3
+#This verification is based on string match.
+
+mileage=12
+amount_per_litre=40
+distance_one_way=190
+per_head_cost=0
+divisible_by_five=False
+
+#Start writing your code from here
+#Populate the variables: per_head_cost and divisible_by_five
+total_distance= 2* distance_one_way
+
+fule_require=total_distance/mileage
+total_cost=fule_require * amount_per_litre
+per_head_cost= total_cost/4
+if(per_head_cost%5==0):
+    divisible_by_five=True
+else:
+    divisible_by_five=False
+#Do not modify the below print statements for verification to work
+print(per_head_cost)
+print(divisible_by_five)
+
+############################################################################################
+#PF-Assgn-4
+#This verification is based on string match.
+
+principal=7800
+rate_of_interest=7.7
+time=26
+interest=0
+
+#Start writing your code from here
+#Populate the variable: interest
+interest=(principal*rate_of_interest*time)/100
+
+#Do not modify the below print statement for verification to work
+print(interest)
+
+
+###########################################################################################
+
+import turtle               # allows us to use the turtles library
+wn = turtle.Screen()        # creates a graphics window
+wn.setup(540,508)           # set window dimension
+
+alex = turtle.Turtle()      # create a turtle named alex
+alex.shape("turtle")        # alex looks like a turtle
+alex.color('red')           # alex has a color
+
+
+alex.circle(50)              # draws a circle of radius 50
+alex.backward(100)            # alex moves 50 positions backward
+alex.forward(50)             # alex moves 50 positions forward
+alex.right(60)               # alex turns 60 degrees right
+alex.left(60)                # alex turns 60 degrees left
+alex.forward(150)
+alex.left(90)
+alex.forward(100)
+alex.left(90)
+alex.forward(200)
+alex.left(90)
+alex.forward(100)
+
+#Write the logic to draw the given pattern
+#Refer the statements given above to draw the pattern
+
